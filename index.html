@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Döner Haus</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet">
+
+<style>
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background: #0f0f0f;
+  color: white;
+}
+
+/* NAVBAR */
+nav {
+  position: fixed;
+  width: 100%;
+  background: rgba(0,0,0,0.7);
+  padding: 15px;
+  text-align: center;
+  backdrop-filter: blur(10px);
+  z-index: 1000;
+}
+
+nav a {
+  color: white;
+  margin: 0 15px;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+/* HERO */
+header {
+  height: 100vh;
+  background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.8)),
+  url('https://images.unsplash.com/photo-1604908176997-4317c9f6f8b2') center/cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+header h1 {
+  font-size: 3.5rem;
+  animation: fadeIn 2s ease;
+}
+
+header p {
+  margin-top: 10px;
+  font-size: 1.2rem;
+  opacity: 0.8;
+}
+
+.btn {
+  margin-top: 20px;
+  padding: 12px 25px;
+  background: #ff3c38;
+  border: none;
+  color: white;
+  cursor: pointer;
+  border-radius: 30px;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  background: #ff1e1a;
+}
+
+/* SECTION */
+section {
+  padding: 80px 10%;
+  text-align: center;
+}
+
+/* MENU */
+.menu {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 25px;
+  margin-top: 40px;
+}
+
+.card {
+  background: #1a1a1a;
+  padding: 25px;
+  border-radius: 15px;
+  transition: 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+}
+
+/* ABOUT */
+.about {
+  max-width: 700px;
+  margin: auto;
+}
+
+/* FOOTER */
+footer {
+  background: black;
+  padding: 30px;
+  text-align: center;
+}
+
+/* ANIMATION */
+@keyframes fadeIn {
+  from {opacity: 0; transform: translateY(20px);}
+  to {opacity: 1; transform: translateY(0);}
+}
+</style>
+
+</head>
+
+<body>
+
+<nav>
+  <a href="#menu">Speisekarte</a>
+  <a href="#about">Über uns</a>
+  <a href="#contact">Kontakt</a>
+</nav>
+
+<header>
+  <div>
+    <h1>🔥 Döner Haus</h1>
+    <p>Frisch. Saftig. Unwiderstehlich.</p>
+    <button class="btn">Jetzt bestellen</button>
+  </div>
+</header>
+
+<section id="menu">
+  <h2>🥙 Unsere Spezialitäten</h2>
+  <div class="menu">
+    <div class="card">
+      <h3>Döner</h3>
+      <p>Frisches Fleisch, knackiger Salat</p>
+      <strong>6,50€</strong>
+    </div>
+    <div class="card">
+      <h3>Dürüm</h3>
+      <p>Gerollt & extra saftig</p>
+      <strong>7,00€</strong>
+    </div>
+    <div class="card">
+      <h3>Lahmacun</h3>
+      <p>Knusprig & würzig</p>
+      <strong>5,50€</strong>
+    </div>
+  </div>
+</section>
+
+<section id="about">
+  <h2>🔥 Über uns</h2>
+  <p class="about">
+    Bei uns bekommst du echten Geschmack! Frische Zutaten, hausgemachte Soßen und täglich frisch zubereitetes Fleisch.
+  </p>
+</section>
+
+<section id="contact">
+  <h2>📍 Kontakt</h2>
+  <p>Musterstraße 1</p>
+  <p>10:00 – 22:00 Uhr</p>
+  <button class="btn">Anrufen</button>
+</section>
+
+<footer>
+  <p>© 2026 Döner Haus</p>
+</footer>
+
+</body>
+</html>
